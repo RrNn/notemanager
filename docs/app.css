@@ -1,0 +1,206 @@
+body {
+  background-color: #f4f9fa;
+}
+
+.welcome {
+  font-family: "Cookie", cursive;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+}
+
+.container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.notes-container {
+  min-height: 50vh;
+  width: 45%;
+}
+
+.note-summary {
+  padding-top: 1rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  max-height: 5%;
+  min-height: 12%;
+  overflow: hidden;
+  color: #4a4646;
+}
+.note-summary span {
+  font-family: "Kalam", cursive;
+  font-size: 28px;
+  border-bottom: 1px dashed #9ca5a7;
+  display: inline-block;
+  width: 70%;
+  overflow-y: scroll;
+}
+
+.note-details {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #9ca5a7;
+  font-size: 1.3rem;
+  padding-left: 4%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  max-height: 20%;
+  overflow: hidden;
+  overflow-x: scroll;
+  color: #757575;
+}
+
+.note-wrapper {
+  padding-bottom: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 0px 35px -6px rgba(0, 0, 0, 0.75);
+}
+
+.input-error {
+  color: red;
+  height: 10%;
+}
+.input-error h2 {
+  font-weight: lighter;
+}
+
+.input-container {
+  padding-top: 5rem;
+  padding-left: 3rem;
+  min-height: 50vh;
+  width: 45%;
+}
+.input-container .input {
+  width: 90%;
+}
+.input-container input,
+.input-container textarea {
+  height: 3rem;
+  font-size: 40px;
+  font-weight: 300;
+  border-radius: 2px;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+}
+
+input,
+span,
+label,
+textarea {
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  font-size: 22px;
+}
+
+input.input + label {
+  margin-bottom: 3rem;
+}
+
+textarea.input {
+  resize: vertical;
+  height: 5rem;
+  margin-top: 5rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+input.input + label,
+textarea.input + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  width: 10%;
+  border-top: 1px solid #4caf50;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.input:focus + label,
+textarea.input:focus + label {
+  width: 90%;
+}
+
+input.input:focus {
+  padding-top: 35px;
+}
+
+textarea.input:focus {
+  margin-top: 35px;
+}
+
+input.input:focus + label > span,
+input.input:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  color: #333;
+}
+
+textarea.input:focus + label > span,
+textarea.input:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #333;
+}
+
+input.input + label > span,
+textarea.input + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8f8f8f;
+  font-size: 40px;
+  top: -66px;
+  left: 0px;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.add-note {
+  margin-top: 2rem;
+  width: 90%;
+  background-color: #f3f9fa;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.add-note:hover {
+  background-color: #4caf50;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 36px 4px rgba(0, 0, 0, 0.75);
+}
+
+.remove-note-btn {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #f3f9fa;
+  border: 2px solid #ff2925;
+  border-radius: 4px;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.remove-note-btn:hover {
+  background-color: #ff2925;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}

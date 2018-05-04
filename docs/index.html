@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./app.css">
+</head>
+<body>
+  <div class="welcome">Welcome to your Note Manager.</div>
+  <div class="container">
+    <div class="input-container">
+      <input class="input" name="summary" id="summary" type="text" placeholder="Summary">
+      <label for="summary"><span>Note summary:</span></label>
+      <textarea class="input" name="detail" id="detail" type="text" placeholder="Details"></textarea>
+      <label for="detail"><span>Note details:</span></label>
+      <button class="add-note" onclick="Manager.addNote()">Add note</button>
+    </div>
+    <div class="notes-container">
+      <available-notes></available-notes>
+    </div>
+  </div>
+  <script src="./dom.js"></script>
+</body>
+</html>
+
+
+
